@@ -9,11 +9,11 @@
     <title>Api Météo</title>
 </head>
 <body>
-    <div id="ville">
+    <div id="city">
         <form class="w3-container">
             <label>Ville</label>
-            <input class="w3-input" type="text">
-            <button class="w3-button w3-white w3-border">Valider</button>
+            <input id="ville" class="w3-input" type="text">
+            <button id="bouton" type="button" class="w3-button w3-white w3-border">Valider</button>
         </form> 
     </div>
 
@@ -21,23 +21,23 @@
         <p>date</p>
     </div>
 
-    <div id="temperature">
-        <p>Température</p>
-    </div>
-
     <div id="donnees">
-        <p>Tem. Max</p>
-        <p>Tem. Min</p>
-        <p>Pres. Atmosphérique</p>
-        <p>Vitesse du vent</p>
-        <p>Humidité</p>
+    
+        <p id="position"></p>
+        <p id="temperature">Température</p>
+        <p id="tempmax">tem.max</p>
+        <p id="tempmin">tem.min</p>
+        <p id="pression">pres.atmosphérique</p>
+        <p id="vent">Vitesse du vent</p>
+        <p id="humidite">Humidité</p>
+        <p id="longitude">Longitude</p>
+        <p id="latitude">Latitude</p>
+        <div id="map"> </div>
+
+
     </div>
-
-    <div id="map">
-        <p>Longitude</p>
-        <p>Latitude</p>
-
-    </div>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/moment-with-locales.min.js"></script>
+<script src="js/api.js"></script>
 </body>
 </html>
