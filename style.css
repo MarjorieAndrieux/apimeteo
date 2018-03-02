@@ -64,11 +64,21 @@ input{
 }
 
 @media (max-width:500px) {
-    #temperature{
-        text-align: center;
+
+    #bouton{
+        margin-left:15%;
     }
     
+    #temperature{
+        text-align: center;
+        font-size: 150px;
+    }
+
     #info{
         text-align: center;
+    }
+
+    #apigooglemap{
+        width:100%;
     }
 }
