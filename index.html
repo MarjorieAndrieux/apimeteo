@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Api Météo</title>
+</head>
+
+<body>
+
+<!-- Div "donnees" qui sert à faire le lien entre le html et les information météo de l'API.-->
+    <div id="donnees">
+
+<!-- Div "city" correspond à l'input et le bouton du formulaire. -->
+        <div id="city">
+            <form class="w3-container">
+                <input id="ville" class="w3-input" type="text">
+                <button id="bouton" type="button" class="w3-button w3-round-large">Valider</button>
+            </form>
+            <div id="date"> </div>
+        </div>
+
+<!-- Div "global" correspondant aux valeurs de l'API à afficher. -->
+        <div id="global" class="w3-row">
+            <div id="temperature" class="w3-half" class="w3-display-topright"></div>
+
+            <div id="info" class="w3-half" class="w3-display-topleft">
+                <p id="tempmax"></p>
+                <p id="tempmin"></p>
+                <p id="pression"></p>
+                <p id="vent"></p>
+                <p id="humidite"></p>
+
+            </div>
+        </div>
+
+        <div id="position">
+            <p id="longitude"></p>
+            <p id="latitude"></p>
+        </div>
+
+    </div>
+
+<!-- Div "apigooglemap" servant à stocker la map. -->
+    <div id="apigooglemap">
+        <div id="map">
+        </div>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/moment-with-locales.min.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>
