@@ -24,9 +24,9 @@ $(document).ready(function () {
 
 function show(data) {
     console.log("testtemp", data.main.temp);
-    $("#temperature").text("Température: " + data.main.temp + "°C");
-    $("#tempmin").text("Température min: " + data.main.temp_min + "°C");
-    $("#tempmax").text("Température Max: " + data.main.temp_max + "°C");
+    $("#temperature").text(parseInt(data.main.temp) + "°");
+    $("#tempmin").text("Température min: " + (parseInt(data.main.temp_min) + "°"));
+    $("#tempmax").text("Température Max: " + (parseInt(data.main.temp_max) + "°"));
     $("#pression").text("Pression atmosphérique: " + data.main.pressure + "hPa");
     $("#vent").text("Vitesse du vent: " + data.wind.speed + "km/h");
     $("#humidite").text("Taux d'humidité: " + data.main.humidity + "%");
