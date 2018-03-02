@@ -1,3 +1,5 @@
+/*Css par défault pour toute taille d'écran (hors - 500px).*/
+
 body{
     background-color: #00796b;
     font-family: 'Roboto', sans-serif;
@@ -63,6 +65,7 @@ input{
     height: 100%;
 }
 
+/* Mise en place des medias query pour les écrans en dessous de 500px (smartphone, tablettes)*/
 @media (max-width:500px) {
 
     #bouton{

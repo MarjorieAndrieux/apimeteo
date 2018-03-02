@@ -12,8 +12,11 @@
 </head>
 
 <body>
+
+<!-- Div "donnees" qui sert à faire le lien entre le html et les information météo de l'API.-->
     <div id="donnees">
 
+<!-- Div "city" correspond à l'input et le bouton du formulaire. -->
         <div id="city">
             <form class="w3-container">
                 <input id="ville" class="w3-input" type="text">
@@ -22,10 +25,9 @@
             <div id="date"> </div>
         </div>
 
+<!-- Div "global" correspondant aux valeurs de l'API à afficher. -->
         <div id="global" class="w3-row">
-            <div id="temperature" class="w3-half" class="w3-display-topright">
-
-            </div>
+            <div id="temperature" class="w3-half" class="w3-display-topright"></div>
 
             <div id="info" class="w3-half" class="w3-display-topleft">
                 <p id="tempmax"></p>
@@ -44,6 +46,7 @@
 
     </div>
 
+<!-- Div "apigooglemap" servant à stocker la map. -->
     <div id="apigooglemap">
         <div id="map">
         </div>
