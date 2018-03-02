@@ -12,7 +12,7 @@ Création de la variable "city" correspondant à l'input "ville" dans le html */
         var city = $('#ville').val();
         if (city != "") {
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&appid=08d07f48ff486a143c25d7296ed323f0",
+                url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&appid=08d07f48ff486a143c25d7296ed323f0",
                 type: "GET",
                 dataType: "jsonp",
 
